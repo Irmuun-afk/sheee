@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+        }
+        img{
+            width: 31%;
+            cursor: pointer;
+        }
+        .game{
+            background-color: cadetblue;
+            width: 600px;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="game">
+        <p class="cPoint">Computer:0</p>
+        <p class="pPoint">player:0</p>
+        <img onclick="pl('scissors')" src="https://th.bing.com/th/id/OIP.zLauqvDn1FbtWUIIB4wKtwHaFi?rs=1&pid=ImgDetMain">
+        <img onclick="pl('rock')" src="https://th.bing.com/th/id/OIP.oYqdAFtT7uyrS4AMJD9QogHaGx?w=820&h=750&rs=1&pid=ImgDetMain">
+        <img onclick="pl('paper')" src="https://i.pinimg.com/originals/31/6a/8a/316a8ab246aec63d6e082bee28dc4b1f.jpg">
+        <p class="pChoice">Player Choice:</p>
+        <p class="cChoice">robot Choice:</p>
+        <p class="winner">winner:</p>
+        <button class="reset" onclick="reset()">reset</button>
+    </div>
+    <script src="2.js"></script>
+</body>
+</html>
